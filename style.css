@@ -4,6 +4,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    color: #1a065b;
 }
 .navbar{
     /* background-color: aqua; */
@@ -11,7 +12,7 @@
     width: 100%;
 }
 .navbar img{
-    width: 300px;
+    width: 350px;
     padding: 0px 50px 0px 0px;
 }
 .navbar ul {
@@ -23,16 +24,19 @@
     line-height: 80px;
     margin: 0px 5px;
 }
-.navbar ul li a{
+.navbar ul li{
     padding: 0px 10px;
     border-radius: 3px;
-    color: #1a065b;
+    /* color: #1a065b; */
     text-transform: uppercase;
     font-weight: bold;
 
 }
+.navbar ul li a{
+    /* color: #1a065b; */
+}
 a.active, a:hover{
-    background: rgb(244, 118, 7);
+    color: rgb(244, 118, 7);
     transition: .5s;
 
 }
