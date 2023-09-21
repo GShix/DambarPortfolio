@@ -12,8 +12,8 @@
     width: 100%;
 }
 .navbar img{
-    width: 350px;
-    padding: 0px 50px 0px 0px;
+    width: 400px;
+    padding: 0px 30px 0px 20px;
 }
 .navbar ul {
     float: right;
@@ -32,10 +32,7 @@
     font-weight: bold;
 
 }
-.navbar ul li a{
-    /* color: #1a065b; */
-}
-a.active, a:hover{
+navbar ul li a.active, a:hover{
     color: rgb(244, 118, 7);
     transition: .5s;
 
@@ -54,7 +51,7 @@ a.active, a:hover{
 }
 @media screen and (max-width: 952px) {
     .navbar img{
-
+        width: 320px;
     }
     
 }
@@ -88,4 +85,40 @@ a.active, a:hover{
     #check:checked ~ ul{
         left: 0;
     }
+}
+.home{
+    padding: 50px;
+    
+}
+.home img {
+    float: left;
+    padding-left: 60px;
+
+}
+.home-data{
+    float: right;
+    padding-right: 10vw;
+    /* padding-top: 200px; */
+   text-align: center;
+}
+.home-data h1{
+    font-size: 50px;
+    color: rgb(244, 118, 7);
+}
+.home-data h2{
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.button{
+    background: rgb(248, 128, 7);
+    
+    border-radius: 4px;
+    padding: 4px;
+    transition: all 2000ms ease-in-out;
+}
+.button:hover{
+       color: white;
+        transition: .5s;
+        text-co
+    
 }
