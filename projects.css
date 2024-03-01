@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color:rgb(68, 103, 217);
+}
+.navbar li{
+    list-style: none;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+
+}
+a:hover{
+    color: orange;
+}
+/* HEADER */
+header{
+    background:rgb(41, 68, 156) ;
+    position: relative;
+    margin-top: -8px;
+    padding: 0 20px;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar .project{
+    display: flex;
+    gap: 30px;
+}
+.navbar .toogleBtn{
+    color: orange;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.actbtn1{
+    background-color: orange;
+    color: white;
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.actbtn{
+    background-color: orange;
+    color: white;
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.actbtn:hover{
+    scale: 1.05;
+    color: white;
+}
+.actbtn:active{
+    scale: 0.95;
+}
+/* dropdownMENU */
+.dropdownMENU{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;   
+    padding-top: 15px;
+    height: 0;
+    width: 300px;
+    background: rgb(88, 114, 199);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    /* padding: 10px; */
+    overflow: hidden;
+    transition: .2s cub;
+}
+.dropdownMENU.open{
+    height: 240px;
+}
+.dropdownMENU li{
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdownMENU .actbtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* Responsive */
+@media(max-width: 992px){
+    .navbar .project,
+    .navbar .actbtn1{
+        display: none;
+    }
+    .navbar .toogleBtn{
+        display: block;
+    }
+    .dropdownMENU{
+        display: block;
+    }
+}
+@media(max-width: 576px)
+{
+    .dropdownMENU{
+        left: 2rem;
+        width: unset;
+    }
+}
