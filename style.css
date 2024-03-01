@@ -95,7 +95,7 @@ navbar ul li a.active, a:hover{
 .home img {
     /* padding-left: 10px; */
 }
-.home-data{s
+.home-data{
     padding-right: 10vw;
     /* padding-top: 200px; */
    text-align: center;
@@ -119,6 +119,5 @@ navbar ul li a.active, a:hover{
     background: rgb(248, 128, 7);
        color: white;
         transition: .2s;
-        text-co
     
 }
